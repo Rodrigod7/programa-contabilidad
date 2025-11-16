@@ -1,0 +1,44 @@
+[
+    {
+        "usuario": "Ivan",
+        "nombre_completo": "Administrador Sistema",
+        "descripcion": "Inicio de sesión: admin",
+        "fecha_hora": "28/06/2025 12:33:25"
+    },
+    {
+        "usuario": "Ivan",
+        "nombre_completo": "Administrador Sistema",
+        "descripcion": "Usuario creado: Rodrigo (Rodrigo Espinoza Squef)",
+        "fecha_hora": "28/06/2025 12:33:57"
+    },
+    {
+        "usuario": "Ivan",
+        "nombre_completo": "Ricardo Ivan Espinoza",
+        "descripcion": "Inicio de sesión: Ivan",
+        "fecha_hora": "28/06/2025 12:36:46"
+    },
+    {
+        "usuario": "Rodrigo",
+        "nombre_completo": "Rodrigo Espinoza Squef",
+        "descripcion": "Inicio de sesión: Rodrigo",
+        "fecha_hora": "28/06/2025 12:37:26"
+    },
+    {
+        "usuario": "Rodrigo",
+        "nombre_completo": "Rodrigo Espinoza Squef",
+        "descripcion": "Venta registrada: Llave - $20,000.00",
+        "fecha_hora": "28/06/2025 12:39:00"
+    },
+    {
+        "usuario": "Rodrigo",
+        "nombre_completo": "Rodrigo Espinoza Squef",
+        "descripcion": "Cierre de sesión: Rodrigo",
+        "fecha_hora": "28/06/2025 12:39:06"
+    },
+    {
+        "usuario": "Ivan",
+        "nombre_completo": "Ricardo Ivan Espinoza",
+        "descripcion": "Inicio de sesión: Ivan",
+        "fecha_hora": "28/06/2025 12:39:16"
+    }
+]
