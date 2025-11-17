@@ -1,0 +1,21 @@
+# Core
+PyQt6
+SQLAlchemy
+
+# Seguridad
+bcrypt
+cryptography
+
+# Reportes y Exportación
+reportlab
+openpyxl
+matplotlib
+
+# Desarrollo
+pytest
+pytest-qt
+black
+pylint
+
+# Distribución
+pyinstaller

@@ -1,0 +1,37 @@
+2025-11-16 21:06:46 - ContabilidadPro - INFO - Inicializando base de datos...
+2025-11-16 21:06:46 - ContabilidadPro - INFO - Usuario administrador verificado
+2025-11-16 21:06:57 - ContabilidadPro - ERROR - Error fatal al iniciar la aplicación: Instance <Usuario at 0x1a5b7ac42d0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+Traceback (most recent call last):
+  File "C:\Users\rodri\Documents\visual\programa-contabilidad\ContabilidadPro\main.py", line 43, in main
+    app_logger.info(f"Usuario {usuario.username} autenticado exitosamente")
+                               ^^^^^^^^^^^^^^^^
+  File "C:\Users\rodri\Documents\visual\programa-contabilidad\ContabilidadPro\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 569, in __get__
+    return self.impl.get(state, dict_)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\rodri\Documents\visual\programa-contabilidad\ContabilidadPro\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1096, in get
+    value = self._fire_loader_callables(state, key, passive)
+  File "C:\Users\rodri\Documents\visual\programa-contabilidad\ContabilidadPro\venv\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1126, in _fire_loader_callables
+    return state._load_expired(state, passive)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\rodri\Documents\visual\programa-contabilidad\ContabilidadPro\venv\Lib\site-packages\sqlalchemy\orm\state.py", line 803, in _load_expired
+    self.manager.expired_attribute_loader(self, toload, passive)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rodri\Documents\visual\programa-contabilidad\ContabilidadPro\venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 1607, in load_scalar_attributes
+    raise orm_exc.DetachedInstanceError(
+    ...<2 lines>...
+    )
+sqlalchemy.orm.exc.DetachedInstanceError: Instance <Usuario at 0x1a5b7ac42d0> is not bound to a Session; attribute refresh operation cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+2025-11-16 21:08:58 - ContabilidadPro - INFO - Inicializando base de datos...
+2025-11-16 21:08:58 - ContabilidadPro - INFO - Usuario administrador verificado
+2025-11-16 21:09:04 - ContabilidadPro - INFO - Usuario Ivan autenticado exitosamente
+2025-11-16 21:09:04 - ContabilidadPro - INFO - Ventana principal cargada para usuario Ivan
+2025-11-16 21:11:44 - ContabilidadPro - INFO - Inicializando base de datos...
+2025-11-16 21:11:44 - ContabilidadPro - INFO - Usuario administrador verificado
+2025-11-16 21:11:44 - ContabilidadPro - ERROR - Error al cargar QSS: 'charmap' codec can't decode byte 0x81 in position 2215: character maps to <undefined>
+2025-11-16 21:11:52 - ContabilidadPro - INFO - Usuario Ivan autenticado exitosamente
+2025-11-16 21:11:52 - ContabilidadPro - INFO - Ventana principal cargada para usuario Ivan
+2025-11-16 21:15:25 - ContabilidadPro - INFO - Inicializando base de datos...
+2025-11-16 21:15:25 - ContabilidadPro - INFO - Usuario administrador verificado
+2025-11-16 21:15:25 - ContabilidadPro - ERROR - Error al cargar QSS: 'charmap' codec can't decode byte 0x81 in position 2215: character maps to <undefined>
+2025-11-16 21:15:32 - ContabilidadPro - INFO - Usuario Ivan autenticado exitosamente
+2025-11-16 21:15:32 - ContabilidadPro - INFO - Ventana principal cargada para usuario Ivan

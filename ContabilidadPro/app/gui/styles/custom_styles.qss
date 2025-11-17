@@ -1,0 +1,139 @@
+/* app/gui/styles/custom_styles.qss */
+
+QWidget {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+QMainWindow {
+    background-color: #252525;
+}
+
+/* --- QTabWidget (Pestañas) --- */
+QTabWidget::pane {
+    border-top: 2px solid #3f3f3f;
+    background-color: #2e2e2e;
+}
+
+QTabBar::tab {
+    background-color: #2e2e2e;
+    color: #a0a0a0;
+    padding: 10px 20px;
+    border: 1px solid #2e2e2e;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background-color: #3f3f3f;
+    color: #ffffff;
+    border: 1px solid #3f3f3f;
+    border-bottom: 2px solid #5a90d6; /* Línea azul */
+}
+
+QTabBar::tab:!selected:hover {
+    background-color: #383838;
+}
+
+/* --- QGroupBox (Contenedores) --- */
+QGroupBox {
+    background-color: #383838;
+    border: 1px solid #3f3f3f;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 10px;
+    left: 10px;
+    background-color: #383838;
+}
+
+/* --- QLabel (Etiquetas) --- */
+QLabel {
+    background-color: transparent;
+    font-size: 14px;
+}
+
+/* Para etiquetas de valores grandes (ej. $0.00 en Dashboard) */
+QLabel[objectName="valorDashboard"] {
+    font-size: 28px;
+    font-weight: bold;
+    color: #5a90d6;
+    padding: 10px;
+}
+
+/* --- QPushButton (Botones) --- */
+QPushButton {
+    background-color: #5a90d6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #6aa0e6;
+}
+
+QPushButton:pressed {
+    background-color: #4a80c6;
+}
+
+QPushButton:disabled {
+    background-color: #4f4f4f;
+    color: #a0a0a0;
+}
+
+/* --- QLineEdit (Campos de texto) --- */
+QLineEdit {
+    background-color: #3f3f3f;
+    color: #e0e0e0;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #5a90d6;
+}
+
+/* --- QTextEdit (Áreas de texto grandes) --- */
+QTextEdit {
+    background-color: #252525;
+    color: #e0e0e0;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+/* --- QComboBox (Menús desplegables) --- */
+QComboBox {
+    background-color: #3f3f3f;
+    color: #e0e0e0;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+QComboBox::drop-down {
+    border: none;
+    background-color: #3f3f3f;
+    width: 20px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #3f3f3f;
+    color: #e0e0e0;
+    selection-background-color: #5a90d6;
+}
